@@ -8,7 +8,7 @@ import static org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT;
 import static org.lwjgl.opengl.GL11.glClearColor;
 import static org.lwjgl.opengl.GL11.glClear;
 import static org.lwjgl.system.MemoryUtil.NULL;
-/* Caliko */
+/* Caliko j*/
 import au.edu.federation.caliko.FabrikBone2D;
 import au.edu.federation.caliko.FabrikChain2D;
 import au.edu.federation.caliko.FabrikStructure2D;
@@ -56,7 +56,6 @@ public class InverseKinematicsVisualization {
       chain.addConsecutiveConstrainedBone(RIGHT, s2Length, s2AngleConstraint, s2AngleConstraint);
       chain.addConsecutiveConstrainedBone(new Vec2f(1.0f, -1.0f), s3Length, s3AngleConstraint, s3AngleConstraint);
       structure.addChain(chain);
-      // CalikoDemo2D.mStructure = structure;
 
       try {
          init();
@@ -116,8 +115,6 @@ public class InverseKinematicsVisualization {
       Point2D mTargetPoint = new Point2D();
       Vec2f screenMousePos = new Vec2f();
       Vec2f worldMousePos = new Vec2f();
-      // Vec2f offset = new Vec2f(150.0f, 0.0f);
-      // Vec2f target = new Vec2f(100.0f, 100.0f);
       // Run the rendering loop until the user has attempted to close
       // the window or has pressed the ESCAPE key.
       while (glfwWindowShouldClose(window) == false) {
@@ -145,8 +142,7 @@ public class InverseKinematicsVisualization {
          FabrikLine2D.draw(chain, 3.0f, mvpMatrix); // Draw the chain
          FabrikLine2D.drawChainConstraintAngles(chain, 20.0f, 2.0f, mvpMatrix);
          glfwSwapBuffers(window); // Swap colour buf.
-         // Rotate the offset 1 degree per frame
-         // offset = Vec2f.rotateDegs(offset, 1.0f);
+         // Rotate the offset 1 degree per frame 
          // Poll for window events. The key callback above will only be
          // invoked during this call.
          glfwPollEvents();

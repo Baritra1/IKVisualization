@@ -45,4 +45,3 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
-//src\main\java\ikvisualization\InverseKinematicsVisualization.java
