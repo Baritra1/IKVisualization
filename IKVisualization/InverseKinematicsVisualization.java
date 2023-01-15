@@ -1,4 +1,3 @@
-//package ikvisualization.Main;
 /* LWJGL */
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.GL;
